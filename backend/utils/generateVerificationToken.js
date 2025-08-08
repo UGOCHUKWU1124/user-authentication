@@ -1,0 +1,2 @@
+export const generateVerificationToken = () => Math.floor(100000 + Math.random() * 900000).toString();
+// Generates a random 6-digit verification code as a string by combining Math.random() with Math.floor()
