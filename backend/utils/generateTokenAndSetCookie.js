@@ -10,7 +10,7 @@ export const generateTokenAndSetCookie = (res,userId) =>{
         secure:process.env.NODE_ENV === "production",
         secure:true, // ensures the cookie is only sent over HTTPS in production environments
         sameSite:"Strict",// helps prevent CSRF attacks by ensuring that the cookie is only sent in a first-party context
-        maxAge:7*24*60*60*1000 // 7 days // sets the maximum age of the cookie to 7 days, after which it will expire and be removed from the user's browser
+        maxAge:15 * 60 * 1000  //15m // sets the maximum age of the cookie to 7 days, after which it will expire and be removed from the user's browser
     })
 }
 
